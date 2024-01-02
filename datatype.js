@@ -10,4 +10,7 @@ let age = 20                // Number  => 2 to power 53
 let isLogeedIn = false      // boolean => true/false
 let state = null            // null    => standalone value
 let city;                 // undefined => 
-                            // symbol  =>
+                            // symbol  => unique
+                            
+console.log(typeof null);   // null type = object 
+console.log(typeof undefined); // undefined type = undefined
