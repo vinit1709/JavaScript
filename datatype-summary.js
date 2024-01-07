@@ -36,4 +36,33 @@ const myFunction = function() {         // function object
 }
 
 // typeof oprations use to know var type
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
+
+
+// *********************** Memory *********************
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+
+// when you fetch data from stack it give copy of this data.
+let myName = "Vinit"
+
+let anotherName = myName
+anotherName = "Rudra"
+
+// console.log(myName);
+// console.log(anotherName);
+
+
+// when you fetch data from heap it give orignal value
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+console.log(userOne.email);
+
+let userTwo = userOne
+userTwo.email = "vinit@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
